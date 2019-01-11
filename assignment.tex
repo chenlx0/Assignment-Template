@@ -32,6 +32,7 @@
 \textwidth=6.5in
 \textheight=9.0in
 \headsep=0.25in
+\headheight=13pt
 
 \linespread{1.1} % Line spacing
 
@@ -39,29 +40,30 @@
 \pagestyle{fancy}
 \lhead{\hmwkAuthorName} % Top left header
 \chead{\hmwkClass\ \hmwkTitle} % Top center head
-\rhead{\LaTeX} % Top right header
+\rhead{} % Top right header
 \lfoot{\lastxmark} % Bottom left footer
 \cfoot{} % Bottom center footer
-\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\rfoot{第\ \thepage\ 页} % Bottom right footer
 \renewcommand\headrulewidth{0.4pt} % Size of the header rule
 \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
 \renewcommand{\normalsize}{\fontsize{12.5pt}{\baselineskip}\selectfont}
+\renewcommand{\contentsname}{目录} % Use 目录 instead of Content
 
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
 
 
 %--Edit Title, Author and Date here
 
-\newcommand{\hmwkTitle}{写作业好累，搬砖也累} % Assignment title
-\newcommand{\hmwkDueDate}{我的一个LaTeX作业模板} % Due date
+\newcommand{\hmwkTitle}{课程设计报告} % Assignment title
+\newcommand{\hmwkSupplement}{我的一个LaTeX报告模板} % Due date
 \newcommand{\hmwkClass}{} % Course/class
 \newcommand{\hmwkClassTime}{2017年12月} % Class/lecture time
 \newcommand{\hmwkAuthorName}{191151班\ 陈立翔 } % Your name
 
 \title{
 \vspace{2in}
-\textmd{\textbf{\hmwkClass \  \hmwkTitle}}\\
-\Large\vspace{0.1in}\large{\hmwkDueDate}\\
+\huge{\textbf{\hmwkClass \  \hmwkTitle}}\\
+\Large\vspace{0.1in}\large{\hmwkSupplement}\\
 \vspace{2.5in}
 }
 
@@ -80,9 +82,9 @@
 \tableofcontents
 \newpage
 
-\section{写作业好累啊}
+\section{苟利国家生死以}
 \begin{quote}
-    真的好累
+    岂因祸福避趋之
 \end{quote}
 
 
