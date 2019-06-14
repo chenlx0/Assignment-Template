@@ -12,17 +12,17 @@
 \usepackage{graphicx} % Required to insert images
 \usepackage{listings} % Required for insertion of code
 \usepackage{courier} % Required for the courier font
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 \usepackage{listings}
 \usepackage{amsmath,xparse}
 \usepackage{fontspec}
+\usepackage[boldfont,slantfont]{xeCJK}
+\usepackage[cs4size,UTF8,winfonts,heading=true]{ctex}
+\usepackage{xifthen, xparse, xstring, fancyhdr, etoolbox}
+\usepackage{indentfirst}
+\usepackage{mwe} 
 % \usepackage{zh_CN-Adobefonts_internal}
-\usepackage [CJKchecksingle,CJKnumber]{xeCJK}
-\setCJKmainfont [BoldFont={Adobe Heiti Std},
-    ItalicFont ={Adobe Kaiti Std}]{Adobe Song Std}
-\setCJKsansfont {Adobe Heiti Std}
-\setCJKmonofont {Adobe Fangsong Std}
-\punctstyle {hangmobanjiao}
+\setlength{\parindent}{4em} 
+\addtolength{\parskip}{3pt}
 
 
 % Margins
@@ -38,7 +38,7 @@
 
 % Set up the header and footer
 \pagestyle{fancy}
-\lhead{\hmwkAuthorName} % Top left header
+\lhead{\ } % Top left header
 \chead{\hmwkClass\ \hmwkTitle} % Top center head
 \rhead{} % Top right header
 \lfoot{\lastxmark} % Bottom left footer
@@ -49,15 +49,14 @@
 \renewcommand{\normalsize}{\fontsize{12.5pt}{\baselineskip}\selectfont}
 \renewcommand{\contentsname}{目录} % Use 目录 instead of Content
 
-\setlength\parindent{0pt} % Removes all indentation from paragraphs
 
 
 %--Edit Title, Author and Date here
 
-\newcommand{\hmwkTitle}{课程设计报告} % Assignment title
-\newcommand{\hmwkSupplement}{我的一个LaTeX报告模板} % Due date
+\newcommand{\hmwkTitle}{智能优化方法结课报告} % Assignment title
+\newcommand{\hmwkSupplement}{无约束单目标优化问题} % Due date
 \newcommand{\hmwkClass}{} % Course/class
-\newcommand{\hmwkClassTime}{2017年12月} % Class/lecture time
+\newcommand{\hmwkClassTime}{2019年5月} % Class/lecture time
 \newcommand{\hmwkAuthorName}{191151班\ 陈立翔 } % Your name
 
 \title{
@@ -82,10 +81,12 @@
 \tableofcontents
 \newpage
 
-\section{苟利国家生死以}
-\begin{quote}
-    岂因祸福避趋之
-\end{quote}
+\section{Rastrigin Function}
+\subsection{问题描述}
+Rastrigin函数是一个非凸函数，用作优化算法的性能测试问题。该函数的公式描述如下：
+\[ min \ f(x) = A \cdot n \]
+\par 
 
 
+\clearpage
 \end{document}
